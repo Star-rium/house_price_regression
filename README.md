@@ -26,7 +26,7 @@ House price prediction using 3 regression methods for homework yay yippe
 
 - Xây dựng thuật toán hồi quy tuyến tính tối ưu bằng Gradient Descent
 - Chuẩn hóa đặc trưng bằng cách áp dụng Z-score Normalization để tránh hiện tượng gradient phân kỳ do chênh lệch bậc độ lớn giữa diện tích nhà và các biến còn lại
-- Loss Function: MSE $J(\theta) = \frac{1}{2m} \sum_{i=1}^m (\hat{y}^{(i)} - y^{(i)})^2$.
+- Loss Function: MSE = $J(\theta) = \frac{1}{2m} \sum_{i=1}^m (\hat{y}^{(i)} - y^{(i)})^2$.
 
 #### B. Lasso Regression - $L_1$ Regularization
 
@@ -40,9 +40,11 @@ House price prediction using 3 regression methods for homework yay yippe
 
 ### 3. Kết quả
 
-- Phương pháp đo lường: $R^2$ = $1 - \frac{{SS_res}{SS_tot}}$
-  **Linear Regression**: $R^2$ Score: 69.45%
-  **Lasso Regression**: $R^2$ Score: 69.49%, Số đặc trưng giữ lại: 41/54
-  **Ridge Regression**: $R^2$ Score: 69.49%, Số đặc trưng giữ lại: 52/54
+- Phương pháp đo lường: $R^2$ = $1 - \frac{SS_{res}}{SS_{tot}}$
+* **Linear Regression**: $R^2$ Score: 69.45%
+* **Lasso Regression**: $R^2$ Score: 69.49%, Số đặc trưng giữ lại: 41/54
+* **Ridge Regression**: $R^2$ Score: 69.49%, Số đặc trưng giữ lại: 52/54
 
 - Trực quan hóa kết quả (Testing từ Linear Regression):
+<img width="1920" height="935" alt="Figure_1" src="https://github.com/user-attachments/assets/e6431188-330c-4f6b-918c-d88fccd60dff" />
+
