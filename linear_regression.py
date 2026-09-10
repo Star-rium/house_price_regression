@@ -25,7 +25,7 @@ m_test = X_test.shape[0]
 X_test = np.c_[np.ones((m_test, 1)), X_test]
 
 class LinearRegression:
-    def __init__(self, alpha=0.01, epochs=2000):
+    def __init__(self, alpha, epochs):
         self.learning_rate = alpha
         self.epochs = epochs
         self.theta = None
@@ -56,7 +56,7 @@ class LinearRegression:
     def predict(self, X):
         return X.dot(self.theta)
 
-model = LinearRegression(alpha=0.01, epochs=2000)
+model = LinearRegression(alpha=0.1, epochs=200)
 model.fit(X_train, Y_train)
 
 y_pred = model.predict(X_test)
