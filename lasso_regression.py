@@ -1,6 +1,3 @@
-'''
-note to the teacher who prob gonna look into this part of the assignment: I am not implementing this from scratch so go suck it lol
-'''
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
